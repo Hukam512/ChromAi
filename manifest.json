@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Beyond Continue",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Self-improving MQL4/MQL5 development environment with AI learning",
   "permissions": ["storage", "activeTab"],
   "background": {
