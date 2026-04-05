@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Continue</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Beyond Continue</h1>
+    <p>Index local MQL files and optimize your Gemini question.</p>
+
+    <label class="file-label">
+      Load .mq4/.mq5 files
+      <input id="fileInput" type="file" webkitdirectory multiple accept=".mq4,.mq5">
+    </label>
+    <div id="indexStatus">Index status: not loaded</div>
+
+    <textarea id="question" placeholder="Describe your problem or ask a question..."></textarea>
+    <button id="optimizeBtn">Optimize question</button>
+    <button id="copyBtn">Copy optimized text</button>
+
+    <div id="result">
+      <h2>Optimized prompt</h2>
+      <pre id="optimizedText">No optimized prompt yet.</pre>
+    </div>
+
+    <div class="section">
+      <h2>Saved AI Responses</h2>
+      <div id="savedResponses">Loading saved responses...</div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
